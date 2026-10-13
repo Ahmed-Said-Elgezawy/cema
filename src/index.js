@@ -3,7 +3,6 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 // const router = express.Router();
-const Movie = require('./models/Movie');
 
 
 
