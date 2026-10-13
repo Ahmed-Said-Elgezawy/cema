@@ -34,7 +34,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/popcorn-room/",       
+              "baseHref": "/",       
               "budgets": [
   {
     "type": "initial",
