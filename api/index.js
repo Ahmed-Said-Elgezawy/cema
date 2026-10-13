@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const movies = require('./movies');
+const movies = require('./data/movies.json'); // بيانات الأفلام من ملف JSON
 
 const app = express();
 app.use(express.json());
@@ -26,21 +26,7 @@ movies.forEach((m) => {
 
 /* ---------- الحصول على جميع الأفلام ---------- */
 app.get('/api/movies', (req, res) => {
-  try {
-    const json = JSON.stringify(movies);
-    const sizeMB = (json.length / 1024 / 1024).toFixed(2);
-    console.log('size MB:', sizeMB);
-
-    // أرجع الحجم أولًا للتشخيص فقط
-    if (req.query.debug === '1') {
-      return res.json({ total: movies.length, sizeMB });
-    }
-
-    res.type('json').send(json);
-  } catch (err) {
-    console.error('LIST ERROR:', err);
-    res.status(500).json({ message: err.message });
-  }
+  res.json(movies);
 });
 
 /* ---------- الحصول على فيلم واحد ---------- */
