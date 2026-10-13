@@ -1,25 +1,25 @@
+
 {
   "name": "cinemaapp",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-  "ng": "ng",
-  "start": "ng serve",
-  "server": "nodemon src/index.js",
-  "build": "ng build",
-  "watch": "ng build --watch --configuration development",
-  "test": "ng test"
-},
+    "ng": "ng",
+    "start": "ng serve",
+    "server": "nodemon src/index.js",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
   "dependencies": {
-    "@angular/common": "^19.2.0",
-    "@angular/compiler": "^19.2.0",
-    "@angular/core": "^19.2.0",
-    "@angular/forms": "^19.2.0",
-    "@angular/platform-browser": "^19.2.0",
-    "@angular/platform-browser-dynamic": "^19.2.0",
-    "@angular/router": "^19.2.0",
+    "@angular/common": "19.2.25",
+    "@angular/compiler": "19.2.25",
+    "@angular/core": "19.2.25",
+    "@angular/forms": "19.2.25",
+    "@angular/platform-browser": "19.2.25",
+    "@angular/platform-browser-dynamic": "19.2.25",
+    "@angular/router": "19.2.25",
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "@ng-select/ng-select": "^15.0.0",
     "bootstrap": "^5.3.6",
     "cors": "^2.8.5",
     "express": "^5.1.0",
@@ -29,9 +29,9 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^19.2.10",
-    "@angular/cli": "^19.2.10",
-    "@angular/compiler-cli": "^19.2.0",
+    "@angular-devkit/build-angular": "19.2.10",
+    "@angular/cli": "19.2.10",
+    "@angular/compiler-cli": "19.2.25",
     "@types/jasmine": "~5.1.0",
     "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.6.0",
@@ -42,11 +42,9 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.7.2"
   },
-  "description": "This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.",
+  "description": "This project was generated using Angular CLI version 19.2.10.",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
 }
-
-
